@@ -1,0 +1,2 @@
+a_P_S1_given_Y1,b_P_S1_given_Y0,auc_AB_within_Sbel1,auc_decomposed,auc_sklearn,diff_decomp_vs_sklearn,auc_upper_bound_if_AB_perfect,observed_auc_within_upper_bound
+0.772489,0.231537,0.714319,0.80794626,0.80794626,0.000000000000e+00,0.857893,True

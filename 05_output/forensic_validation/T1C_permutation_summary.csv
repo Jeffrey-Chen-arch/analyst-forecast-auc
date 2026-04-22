@@ -1,0 +1,2 @@
+observed_auc,null_mean,null_p5,null_p95,null_p99,p_value_upper_bound,n_reps,note
+0.8079462642762243,0.530186089992329,0.525330823379872,0.5350623594208741,0.5372010909771622,0.0001999600079984003,5000,p-value reported as upper bound (count+1)/(n+1); never reports p=0

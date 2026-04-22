@@ -1,0 +1,4 @@
+dataset,schema,table,n_rows,n_sample_permnos,n_scored_tickers_le_2,n_scored_tickers_le_6,n_ibtic_tickers,n_total_pull_tickers,columns,ibes_eps_basis
+ibes_crsp_link,wrdsapps_link_crsp_ibes,ibcrsphist,37662,5962.0,5893.0,5910.0,0.0,5910.0,"ticker,permno,ncusip,sdate,edate,score",
+ibes_actuals,ibes,act_epsus,65844,,,,,,"ticker,cusip,oftic,cname,pends,anndats,value,measure,pdicity,curr_act,usfirm,actdats",adjusted
+ibes_detail_forecasts,ibes,det_epsus,2301017,,,,,,"ticker,cusip,oftic,cname,fpedats,anndats,revdats,estimator,analys,value,measure,fpi,usfirm,curr,curr_act",adjusted

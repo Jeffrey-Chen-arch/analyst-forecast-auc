@@ -1,0 +1,10 @@
+step_order,step,n_main_score_le2,n_sensitivity_score_le6,extra_le6_vs_le2
+0,01_base_gaap_sample,50402.0,50402.0,0
+1,02_has_CCM_SchemeB_permno_at_formation,45968.0,45968.0,0
+2,03_has_WRDS_IBES_link_score_le_2,44347.0,,0
+3,04_has_IBES_actual_EPS_t_known_by_formation,40542.0,40543.0,1
+4,05_has_IBES_actual_EPS_tp1,39632.0,39632.0,0
+5,06_has_analyst_forecasts_in_window,29465.0,29465.0,0
+6,07_final_AUC_sample,29465.0,29465.0,0
+7,03_has_WRDS_IBES_link_score_le_5,,,0
+8,03_has_WRDS_IBES_link_score_le_6,,44351.0,0

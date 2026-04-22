@@ -1,0 +1,7 @@
+excluded_industry,n_remaining,auc_excluding,auc_industry_only,n_in_industry
+Manufacturing (SIC 2000-3999),19376,0.8097,0.8045,10089
+Other,26021,0.8065,0.8187,3444
+Services (SIC 7000-8999),25795,0.8109,0.7837,3670
+Finance (SIC 6000-6999),21234,0.8067,0.8109,8231
+Mining/Constr (SIC 1000-1999),27067,0.8048,0.8423,2398
+Retail/Wholesale (SIC 5000-5999),27957,0.8093,0.7778,1508

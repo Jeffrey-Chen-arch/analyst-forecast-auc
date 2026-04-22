@@ -1,0 +1,5 @@
+method,n_firmyears,auc,note
+per_analyst_latest_CURRENT_MAIN,29465,0.8079,current main result (reference)
+all_forecasts_paper_literal,29465,0.8075,same firm-year overlap with main
+per_analyst_first,29465,0.804,same firm-year overlap with main
+consensus_median,29465,0.7733,

@@ -1,0 +1,15 @@
+check_name,status,value,expected,comment
+01_no_duplicate_gvkey_fyear,PASS,0,0,Each firm-year must appear exactly once in the AUC sample
+02_y_true_binary,PASS,"[0, 1]","[0, 1]",y_true must be 0 or 1 only
+03_score_in_unit_interval,PASS,0,0,"analyst_score is a proportion; must be in [0, 1]"
+04_no_missing_actual_eps_t,PASS,0,0,AUC sample must only contain rows where both EPS values are present
+04_no_missing_actual_eps_tp1,PASS,0,0,AUC sample must only contain rows where both EPS values are present
+05_forecast_anndats_in_window,PASS,0,0,All forecasts must fall within the designated forecast window
+06_forecast_fpedats_within_tolerance,PASS,0,0,All forecast fpedats within ±7 days of target
+07_main_sample_route_a_only,PASS,0,0,Main sample must use WRDS ibcrsphist (route_a) only; ibtic is appendix only
+08_ibes_crsp_link_score_le_2,PASS,"missing=0, max=2.0","missing=0, max≤2","WRDS ICLINK score: 0 = best, 6 = worst; main sample must have non-missing score ≤ 2 for every observation"
+09_no_lookahead_in_actual_eps_t,PASS,"lookahead=0, missing=0","0, 0",EPS_t announced before formation; missing anndats excluded from main
+10_both_classes_present_for_AUC,PASS,"[np.int64(0), np.int64(1)]","[0, 1]",AUC requires both earnings-increase (y=1) and non-increase (y=0) observations
+11_no_compustat_earnings_columns_in_auc_input,PASS,[],[],"Final AUC input must not carry Compustat earnings columns (ni, ib, epspi, etc.); all earnings directions use IBES Actuals only"
+12_ibes_eps_basis_consistent,PASS,adjusted,same basis for both tables,Actuals and forecasts must use the same IBES EPS split-adjustment basis
+13_auc_in_sensible_range,PASS,0.8079,between 0.45 and 0.85,"AUC outside [0.45, 0.85] is unusual for analyst earnings forecast studies"

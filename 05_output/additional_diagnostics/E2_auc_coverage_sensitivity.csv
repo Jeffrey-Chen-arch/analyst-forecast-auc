@@ -1,0 +1,7 @@
+sample,n,pct_5plus,auc,note
+main_all,29465.0,0.444,0.8079,main result
+excl_5plus_analysts_le4,16376.0,0.0,0.7681,
+excl_3plus_analysts_le2,10800.0,0.0,0.7488,
+only_1_analyst,6618.0,0.0,0.7298,
+proper_observation_reweighted_equal_bucket_auc (E10),29465.0,0.25,0.7927,Proper sample-weighted pooled AUC with equal total weight across coverage buckets.
+descriptive_equal_weight_bucket_avg (E10),,0.25,0.7972,DESCRIPTIVE ONLY: simple mean of within-bucket AUCs. Does NOT account for cross-bucket pairs.

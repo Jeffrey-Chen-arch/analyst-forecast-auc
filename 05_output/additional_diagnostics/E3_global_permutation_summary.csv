@@ -1,0 +1,2 @@
+null_type,n_reps,observed_auc,null_mean,null_p99,p_value_ub,interpretation
+global_unconditional,3000,0.80794626,0.499906,0.506815,0.000333,Global null centers at 0.500. Within-fyear null (from T1C) centers at ~0.530 because pooling across heterogeneous fiscal years shifts the null mean slightly. Both confirm observed AUC is far above any null distribution.

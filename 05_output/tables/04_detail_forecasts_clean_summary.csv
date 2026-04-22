@@ -1,0 +1,2 @@
+n_rows,n_tickers,n_analyst_ids_observed,n_analyst_ids_fallback,pct_analyst_ids_fallback,min_forecast_anndats,max_forecast_anndats,min_fpedats,max_fpedats
+2300899,5512,2300899,0,0.0%,2006-02-01,2024-06-30,2004-12-31,2025-12-31

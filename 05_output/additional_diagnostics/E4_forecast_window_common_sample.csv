@@ -1,0 +1,4 @@
+window,win_days,own_sample_n,own_auc,common_sample_n,common_auc,drop_own_vs_full30,drop_common_vs_full30
+Apr 1-7,7,12291,0.7771,12291,0.7771,0.0309,0.0309
+Apr 1-15,15,19414,0.7786,12291,0.7947,0.0293,0.0132
+Apr 1-30,30,29465,0.8079,12291,0.8301,0.0,-0.0222

@@ -1,0 +1,5 @@
+coverage_bucket,n_firmyears,pct_score_eq_1,p_increase_given_score1,p_increase_given_score_lt1,auc_within_bucket
+1 analyst,6618,0.6386,0.7506,0.2638,0.7298
+2 analysts,4182,0.5691,0.7971,0.2936,0.7802
+3-4 analysts,5576,0.542,0.8441,0.3285,0.8109
+5+ analysts,13089,0.5272,0.9043,0.3366,0.868

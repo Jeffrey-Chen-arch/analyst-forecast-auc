@@ -1,0 +1,41 @@
+# ──────────────────────────────────────────────────────────────────────
+# .gitignore for analyst-forecast-AUC replication
+# ──────────────────────────────────────────────────────────────────────
+# WRDS licensing: raw and intermediate WRDS-derived data are NOT committed.
+# Users with a WRDS subscription can regenerate them by running the pipeline.
+# ──────────────────────────────────────────────────────────────────────
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Data — WRDS-licensed, do NOT commit
+01_input/3.23_rerestart/02_raw/
+01_input/3.23_rerestart/03_intermediate/
+03_raw/
+04_intermediate/
+
+# The replication-sample zip (contains Compustat/CRSP extracts)
+*.zip
+
+# Pipeline logs (regenerated on re-run)
+06_logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*~

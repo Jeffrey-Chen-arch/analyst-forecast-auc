@@ -1,0 +1,6 @@
+subsample,n,actual_increase_rate,auc,diff_from_main
+all_firm_years,29465,0.6089,0.8079,0.0
+positive_EPS_t_only,24954,0.5968,0.8158,-0.0079
+negative_EPS_t_only,4467,0.6756,0.7522,0.0557
+near_zero_excluded_005,29076,0.6083,0.8089,-0.001
+excl_top1pct_abs_change,29171,0.6106,0.8077,0.0002

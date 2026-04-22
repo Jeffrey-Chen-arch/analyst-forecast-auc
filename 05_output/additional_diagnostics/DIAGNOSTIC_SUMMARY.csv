@@ -1,0 +1,17 @@
+id,finding,status,note
+D1,AUC-included firm-years have 5.5× higher median at than excluded firm-years,OK,"Selection into IBES analyst coverage is size-biased — expected, not a defect. IBES analyst forecasts are naturally concentrated among larger, more visible firms."
+D2,2015-2018: our 5+ analyst share = 43.9%; proper reweighted AUC (5+ share → 25%) = 0.7749,OK,"Coverage composition appears to be one contributor to the 2015-2018 gap, but is not necessarily the sole explanation. Proper reweighted pooled AUC used; sklearn/manual diff=1.67e-15."
+D3,"null_mean=0.5302, null_p99=0.537201, p<0.0002",OK,Report: observed AUC exceeds null p99 (0.5372); p<0.0002
+D4,P(increase|score=1.0) = 0.8386  vs  P(increase|score<1.0) = 0.3155  (gap = 0.5230),OK,This contrast is the core descriptive intuition; present it carefully without claiming it is the sole explanation.
+D6,score≤6 vs score≤2: max extra rows = 1; converge step = '05_has_IBES_actual_EPS_tp1',OK,"The attrition trace, not just final key equality, documents whether low-quality-link candidates disappear after IBES Actuals/forecast availability screens."
+D7/E7,"Full-period: Pearson=0.3705, Spearman=0.8287, Winsorized=0.7804",OK,Low raw Pearson appears related to street-EPS volatility/outliers. Spearman and winsorized correlations provide a more robust persistence check. Year-shift is ruled out by target-fpedats checks + fraction_equal<0.01.
+D8,"Overall actual_increase_rate = 60.9%; 3 years > 70%: [2009, 2017, 2020]",OK,"AUC is rank-based (Mann-Whitney), not affected by positive-class base rate. The increase rate is reported for context only."
+E1,"Fraction at score=1.0: 1-analyst=0.64, 2-analyst=0.57, 5+=0.53",OK,"If score=1 fraction is high across multiple-analyst buckets too, it is not merely a 1-analyst artifact."
+E2,"AUC excluding 5+ analysts (≤4 only): 0.7681  (N=16,376)",OK,"If AUC remains > 0.72, the result is not solely a large-firm phenomenon"
+E3,Global null mean = 0.499906  (expected = 0.5000); global p99 = 0.506815,OK,"Global null at ~0.500 confirms within-fyear null 0.5302 is a pooling artefact, not evidence of inflated AUC"
+E4,"Apr 1-7: own-window AUC = 0.7771, common-sample AUC = 0.7771",OK,Common-sample AUC rules out sample-selection explanation for early-window result — same firm-years give high AUC with only 7d forecasts
+E5,tol=0: AUC=0.8079  tol=0.02: AUC=0.8084,OK,Both actual direction and forecast direction recomputed under the same EPS-change threshold; result robust to EPS rounding.
+E6,"Leave-one-year-out AUC range: [0.8029, 0.8100]",OK,No single year drives the result; AUC is stable across all 19 fiscal years
+E8,"Positive EPS_t only: AUC=0.8158  N=24,954",OK,Result robust to excluding loss firms — not driven by easy loss-reversal cases
+E9,"AUC by link score: [(1, 0.808), (2, 0.8161)]",OK,Similar AUC across score=0/1/2 confirms link quality does not drive result
+E11,"Leave-one-industry-out AUC range: [0.8048, 0.8109]",OK,No single industry drives the result

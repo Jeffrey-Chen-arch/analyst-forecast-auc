@@ -1,0 +1,3 @@
+file,n_obs,n_firms,min_fyear,max_fyear
+gaap_sample,50402,6396,2005,2023
+raw_sample,80446,10076,2003,2024

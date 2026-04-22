@@ -1,0 +1,11 @@
+period,coverage_bucket,n_firmyears,n_firms,pct_of_period_total,actual_increase_rate,mean_score,auc
+Full 2005-2023,1 analyst,6618,2802,22.5,0.5746,0.6386,0.7298
+Full 2005-2023,2 analysts,4182,2117,14.2,0.5801,0.6398,0.7802
+Full 2005-2023,3-4 analysts,5576,2173,18.9,0.608,0.6445,0.8109
+Full 2005-2023,5+ analysts,13089,2164,44.4,0.6359,0.6707,0.868
+Full 2005-2023,ALL,29465,4503,100.0,0.6089,0.6541,0.8079
+2015-2018 (paper period),1 analyst,1483,1036,23.5,0.5988,0.6736,0.7159
+2015-2018 (paper period),2 analysts,894,693,14.2,0.6163,0.6857,0.764
+2015-2018 (paper period),3-4 analysts,1168,778,18.5,0.6781,0.7093,0.8035
+2015-2018 (paper period),5+ analysts,2773,1074,43.9,0.6967,0.7412,0.8612
+2015-2018 (paper period),ALL,6318,2309,100.0,0.6589,0.7116,0.7936

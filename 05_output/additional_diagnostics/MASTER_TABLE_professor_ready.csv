@@ -1,0 +1,18 @@
+potential_concern,test_used,result,interpretation
+AUC calculation error,sklearn = Mann-Whitney; 3-component decomposition,"T1-B PASS: sklearn=0.80794626, MW=0.80794626, inv=0.19205374, max_diff=0.00e+00; T1-E-1 PASS: diff=0.00e+00",AUC calculation verified correct via three independent methods
+Look-ahead in EPS_t,actual_anndats_t ≤ formation_date,"T2-0 PASS: violations=0, missing=0",EPS_t announced before portfolio formation; no look-ahead
+Look-ahead in t+1 actual,forecast_anndats < actual_anndats_tp1,"T2-A PASS: violations=0, missing_anndats_tp1=0",All forecasts issued before t+1 EPS announcement
+Wrong fiscal year target,target_fpedats_tp1 ≈ datadate+1yr; horizon distribution,T2-B/C: 0 mismatches; median horizon = 252d,Forecasts consistently target FY t+1
+Late-April information drives result,Apr 1-7 own-window AUC; Apr 1-7 COMMON SAMPLE AUC (same firms),E4: own-window = 0.7771; common-sample = 0.7771,Early-April AUC is high even on the same firm-years — not a selection artifact
+Aggregation method mismatch,per-analyst-latest vs all-forecasts (paper-literal),"T3-C PASS: diff=0.0004 (current=0.8079, all-fcst=0.8075)",Aggregation choice immaterial; both reported
+IBES currency-field handling,strict curr_act='USD' vs curr_act='USD OR NULL',"T3-D PASS: diff=0.0000 (strict_latest=0.8079, current=0.8079)",Currency-field handling has no impact on the result
+IBES-CRSP link score threshold,score≤2 / ≤5 / ≤6 final key equality; AUC by link score,"T4-A/E9: identical firm-year sets; score AUCs = {1: 0.808, 2: 0.8161}",Link score threshold does not drive result
+Positive base rate inflates AUC,Global permutation null (unconditional); AUC is rank-based,E3: global null mean = 0.4999; p < 0.0003,"AUC is a Mann-Whitney rank statistic; base rate does not mechanically inflate AUC, though it affects cutoff-based accuracy"
+Single year drives result,Leave-one-year-out AUC,"E6: range [0.8029, 0.8100]",No single year drives the result; stable across all 19 fiscal years
+Loss firms / EPS sign drives result,Positive EPS_t only subsample AUC,E8: positive-EPS_t-only AUC = 0.8158,Result robust to excluding loss firms and near-zero EPS changes
+EPS rounding / tiny differences,Consistent tolerance for BOTH actual and forecast direction (tol=0 to 0.02),E5: tol=0 AUC=0.8079; tol=0.02 AUC=0.8084,Both directions recomputed under the same threshold; result unchanged
+High-coverage large firms dominate,AUC excl. 5+ analysts; coverage decomposition; reweighted pooled AUC,E2: excl-5+ AUC = 0.7681; E10 equal-bucket pooled AUC = 0.7927; D2 2015-2018 reweighted AUC (5+→25%) = 0.7749,Coverage composition appears to contribute to the high AUC; result persists after excluding high-coverage firms
+2015-2018 gap vs paper,Coverage decomposition + observation-reweighted pooled AUC counterfactual,D2: our 5+ share = 43.9%; reweighted AUC (5+→25%) = 0.7749,Coverage composition is one plausible factor; gap may reflect sample composition more broadly
+Selection bias (IBES coverage),Included vs dropped firm-year characteristics,D1: AUC firm-years have 5.5× higher median assets,"AUC-included firm-years have systematically higher total assets — expected, as analyst coverage concentrates among larger firms"
+Score=1 is single-analyst artifact,Score=1 fraction by coverage bucket,"E1: score=1 fraction: 1-analyst=0.6386, 5+=0.5272","If score=1 remains common in multi-analyst buckets, it is not merely a single-analyst artifact"
+Industry concentration,Leave-one-industry-out AUC,"E11: range [0.8048, 0.8109]",No single industry drives the result

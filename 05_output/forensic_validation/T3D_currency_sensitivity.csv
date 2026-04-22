@@ -1,0 +1,5 @@
+filter,aggregation,n_firmyears,auc,note
+current_main_curr_act_USD_or_NULL,per_analyst_latest,29465,0.8079,current main (reference)
+current_main_curr_act_USD_or_NULL,all_forecasts,29465,0.8075,
+strict_USD_only,per_analyst_latest,29465,0.8079,same aggregation as current main
+strict_USD_only,all_forecasts,29465,0.8075,

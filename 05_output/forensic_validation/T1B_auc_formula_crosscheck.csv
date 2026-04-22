@@ -1,0 +1,2 @@
+auc_sklearn,auc_mannwhitney,auc_inverted,expected_inverted,diff_sklearn_vs_mannwhitney,diff_inverted_consistency
+0.80794626,0.80794626,0.19205374,0.19205374,0.0,0.0

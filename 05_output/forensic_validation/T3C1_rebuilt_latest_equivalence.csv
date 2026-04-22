@@ -1,0 +1,2 @@
+n_firmyears_current_main,n_firmyears_rebuilt_from_allrec,n_missing_from_rebuilt,max_abs_score_diff,auc_current_on_overlap,auc_rebuilt_latest,abs_auc_diff
+29465,29465,0,1.0,0.8079462642762243,0.8079054822846927,4.0781991531568806e-05

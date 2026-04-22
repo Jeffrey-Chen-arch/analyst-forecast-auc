@@ -1,0 +1,8 @@
+sample_label,step,n_obs,n_firms,min_fyear,max_fyear,dropped_from_previous,pct_retained_from_previous,pct_retained_from_base
+main_score_le_2,01_base_gaap_sample,50402,6396,2005,2023,0,1.0,1.0
+main_score_le_2,02_has_CCM_SchemeB_permno_at_formation,45968,5908,2005,2023,4434,0.912,0.912
+main_score_le_2,03_has_WRDS_IBES_link_score_le_2,44347,5763,2005,2023,1621,0.9647,0.8799
+main_score_le_2,04_has_IBES_actual_EPS_t_known_by_formation,40542,5499,2005,2023,3805,0.9142,0.8044
+main_score_le_2,05_has_IBES_actual_EPS_tp1,39632,5431,2005,2023,910,0.9776,0.7863
+main_score_le_2,06_has_analyst_forecasts_in_window,29465,4503,2005,2023,10167,0.7435,0.5846
+main_score_le_2,07_final_AUC_sample,29465,4503,2005,2023,0,1.0,0.5846

@@ -1,0 +1,2 @@
+observed_auc,null_mean,null_p50,null_p95,null_p99,null_p99_9,null_max,p_value_upper_bound,reporting_note
+0.80794626,0.530186,0.530195,0.535062,0.537201,0.539112,0.540474,0.0002,Observed AUC 0.8079 exceeds null p99 (0.537201); p < 0.0002

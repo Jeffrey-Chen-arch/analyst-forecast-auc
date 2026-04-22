@@ -1,0 +1,4 @@
+step,n_obs,n_firms
+base_gaap_sample,50402,6396
+has_CCM_SchemeB_permno_at_formation,45968,5908
+ccm_ambiguity_flag,0,0
