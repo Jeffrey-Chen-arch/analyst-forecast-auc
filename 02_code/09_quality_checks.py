@@ -176,7 +176,10 @@ def main():
 
     # ── 10: Both classes present ───────────────────────────────────────────────
     if "y_true" in df.columns:
-        classes = set(df["y_true"].dropna().astype(int).unique())
+        # Cast to plain Python ints so the CSV value is "[0, 1]", not
+        # "[np.int64(0), np.int64(1)]" (cosmetic fix — numpy scalars print with
+        # their dtype wrapper in Python 3.13).
+        classes = {int(v) for v in df["y_true"].dropna().astype(int).unique()}
         results.append(check(
             "10_both_classes_present_for_AUC",
             {0, 1}.issubset(classes), sorted(classes), "[0, 1]",
