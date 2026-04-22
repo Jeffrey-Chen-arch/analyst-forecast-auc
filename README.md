@@ -189,5 +189,5 @@ Documented here for transparency:
 
 ## Contact
 
-**Jiahui Chen** (NYU Stern RA)
-chen8892@umn.edu | github: [@Jeffrey-Chen-arch](https://github.com/Jeffrey-Chen-arch)
+**Jiahui Chen** 
+jc14488@nyu.edu | github: [@Jeffrey-Chen-arch](https://github.com/Jeffrey-Chen-arch)
