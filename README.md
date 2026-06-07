@@ -3,6 +3,14 @@
 AUC of analysts' earnings-forecast directions against actual earnings-change
 directions, following **Section 4.2.3 of Chen, Cho, Dou & Lev (2022, JAR)**.
 
+> 📌 **Follow-up (June 2026):** A closer Chen Table 1–anchored re-run lives in
+> [`Jeffrey-Chen-arch/ccdl2022-table1-analyst-auc`](https://github.com/Jeffrey-Chen-arch/ccdl2022-table1-analyst-auc).
+> That repo anchors to the official 8,149-accession `adsh.txt` from the Chicago Booth
+> JAR supplement and re-runs the analyst AUC on the exact Chen Table 1 sample under the
+> same raw/no-drift definition. Headline result: **AUC = 0.8139** on 4,164 paper-test
+> analyst-covered firm-years — very close to the 0.8079 below, which is itself the
+> key evidence that the high AUC is *not* driven by this repo's broader March sample.
+
 ## Result
 
 - **Main AUC = 0.8079** (N = 29,465 firm-years, 4,503 firms, FY 2005–2023)
